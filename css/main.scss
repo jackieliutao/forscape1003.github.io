@@ -12,13 +12,17 @@
 .zhou{
     width: 800px;
     margin: 0 auto;
+    overflow: hidden;
 }
 .zhou img{
     width: 350px;
     padding-left: 100px;
+    float: left;
+    margin-right: 100px;
 }
 .zhou div{
     padding-top: 80px;
+    float: right;
 }
 .zhou h3{
     line-height: 30px;
