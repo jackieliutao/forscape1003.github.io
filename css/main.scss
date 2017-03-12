@@ -9,20 +9,23 @@
   "highlight",
   "syntax-highlighting"
 ;
-.zhou{
+.logo{
     width: 800px;
     margin: 0 auto;
     overflow: hidden;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
-.zhou img{
+.logo img{
     width: 550px;
     float: left;
-    margin-right: 30px;
+    padding-left: 60px;
 }
-.zhou div{
+.logo div{
     padding-top: 80px;
     float: left;
+    padding-right: 30px;
 }
-.zhou h3{
+.logo h3{
     line-height: 30px;
 }
