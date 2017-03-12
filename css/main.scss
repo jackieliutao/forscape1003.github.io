@@ -10,9 +10,16 @@
   "syntax-highlighting"
 ;
 .zhou{
-    width: 100px;
-    height: 100px;
-    background: pink;
-    text-align: center;
-    font-style: 30px;
+    width: 800px;
+    margin: 0 auto;
+}
+.zhou img{
+    width: 350px;
+    padding-left: 100px;
+}
+.zhou div{
+    padding-top: 80px;
+}
+.zhou h3{
+    line-height: 30px;
 }
