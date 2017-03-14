@@ -300,3 +300,41 @@ Connection: keep-alive
 ### 调整接口数据格式
 
 后台代码中，添加下面两个 API
+
+```
+app.get('/username', function(req, res){
+  res.json({"username": "happypeter"});
+})
+
+```
+
+对应，到前台代码中，调整 componentWillMount ，如下：
+
+```
+componentWillMount() {
+  axios.get('http://localhost:3000/username').then(function(response){
+      return console.log(response.data.username);
+  })
+}
+
+```
+这样，前台的 console 中，就可以看到返回数据
+
+```
+happypeter
+
+```
+
+下面进一步调整 componentWillMount 如下：
+
+```
+componentWillMount() {
+  axios.get('http://localhost:3000/username').then((response) => {
+      this.setState({username: response.data.username});
+  })
+}
+```
+
+### 总结
+
+至此，前台页面上成功显示出了，后台的数据。这样，一个前后端分离架构，通过 API 通信的应用，我们就完成了。
